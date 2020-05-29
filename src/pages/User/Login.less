@@ -1,0 +1,27 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:not(:first-child){
+      margin-left: 16px;
+    }
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: center;
+  }
+}
